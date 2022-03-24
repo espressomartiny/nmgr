@@ -22,7 +22,6 @@ let obory = [
   "FRANCOUZSKÁ FILOLOGIE",
   "Germánská a severoevropská studia: FINSKÁ FILOLOGIE",
   "Germánská a severoevropská studia: GERMANISTIKA",
-  "Germánská a severoevropská studia: NEDERLANDISTIKA",
   "Germánská a severoevropská studia: SKANDINAVISTIKA",
   "HEBRAISTIKA A ŽIDOVSKÁ STUDIA",
   "HISPANISTIKA",
@@ -65,25 +64,21 @@ let obory = [
 let tazeneObory = [];
 
 function vyberObor() {
-    if (obory.length === 0) {
-        return;
-    }
+  if (obory.length === 0) {
+    return;
+  }
 
-    // Generujeme náhodný index
-    let vybranyIndex = Math.floor(Math.random() * obory.length);
+  let vybranyIndex = Math.floor(Math.random() * obory.length);
 
-    // Získáme výherní jméno na patřičném indexu
-    let vybranyObor = obory[vybranyIndex];
+  let vybranyObor = obory[vybranyIndex];
 
-    // Vyřadíme vylosované jméno z osudí
-    obory.splice(vybranyIndex, 1);
+  obory.splice(vybranyIndex, 1);
 
-    // Výherní jméno si uložíme do pole k ostatním výherním
-    tazeneObory.push(" " + vybranyObor);
+  tazeneObory.push(" " + vybranyObor);
 
-    let vyherce = document.querySelector('#obor');
-    vyherce.textContent = vybranyObor;
+  let vyherce = document.querySelector("#obor");
+  vyherce.textContent = vybranyObor;
 
-    let seznam = document.querySelector('#seznam');
-    seznam.textContent = tazeneObory;
+  let seznam = document.querySelector("#seznam");
+  seznam.textContent = tazeneObory;
 }
