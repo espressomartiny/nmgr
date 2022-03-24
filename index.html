@@ -1,48 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navazující studium</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300&display=swap"
-        rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
+    
     <div class="obsah">
         <h1>Jak navázat na bakalářské studium?</h1>
+	
+<form> 
+    <input type="checkbox"> Podat si přihlášku do 31. 3. <br>
+    <input type="checkbox"> Vybrat si druhý program <br> 
+    <input type="checkbox"> Přihlásit se k BZK do 10. 5. <br>
+    <input type="checkbox"> Splňit studijní povinnosti do 1. 6. <br>
+    <input type="checkbox"> Odevzdat BP do 31. 5.<br>
+    <input type="checkbox"> Přijít 17. 6. na písemnou část BZK <br>
+    <input type="checkbox"> Přijít 23. 6. na ústní část BZK <br>
+    <input type="checkbox"> Přijít 24. 6. na obhajobu <br>
+</form>
+		<div id="obor"></div>
 
-        <form>
-            <input type="checkbox"> Podat si přihlášku do 31. 3. <br>
-            <input type="checkbox"> Vybrat si druhý program <br>
-            <input type="checkbox"> Přihlásit se k BZK do 10. 5. <br>
-            <input type="checkbox"> Splňit studijní povinnosti do 1. 6. <br>
-            <input type="checkbox"> Odevzdat BP do 31. 5.<br>
-            <input type="checkbox"> Přijít 17. 6. na písemnou část BZK <br>
-            <input type="checkbox"> Přijít 23. 6. na ústní část BZK <br>
-            <input type="checkbox"> Přijít 24. 6. na obhajobu <br>
-        </form>
-        <div id="obor"></div>
-
-        <button class="tlacitko" onclick="vyberObor()">Vybrat program náhodně</button>
+		<button class="tlacitko" onclick="vyberObor()">Vybrat program náhodně</button>
 
 
 
-        <!-- <h2>Přihlásím se na:</h2>
+	<!-- <h2>Přihlásím se na:</h2>
 
 	<div id="seznam">Germánská a severoevropská studia: NEDERLANDISTIKA a ...</div> -->
 
-    </div>
+	</div>
 
 
-    <script src="nmgr.js"></script>
+	<script src="nmgr.js"></script>
 </body>
-
 </html>
